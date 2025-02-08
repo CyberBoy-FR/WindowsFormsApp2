@@ -30,6 +30,7 @@
         {
             this.resultLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.showTextButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // resultLabel
@@ -56,6 +57,19 @@
             this.label1.TabIndex = 1;
             this.label1.Click += new System.EventHandler(this.resultLabel_Click);
             // 
+            // showTextButton
+            // 
+            this.showTextButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.showTextButton.Font = new System.Drawing.Font("Impact", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.showTextButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.showTextButton.Location = new System.Drawing.Point(523, 248);
+            this.showTextButton.Name = "showTextButton";
+            this.showTextButton.Size = new System.Drawing.Size(211, 61);
+            this.showTextButton.TabIndex = 0;
+            this.showTextButton.Text = "КУПИТЬ!\r\n\r\n";
+            this.showTextButton.UseVisualStyleBackColor = false;
+            this.showTextButton.Click += new System.EventHandler(this.showTextButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -65,6 +79,7 @@
             this.ClientSize = new System.Drawing.Size(1166, 387);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.resultLabel);
+            this.Controls.Add(this.showTextButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -77,6 +92,7 @@
         #endregion
         private System.Windows.Forms.Label resultLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button showTextButton;
     }
 }
 
